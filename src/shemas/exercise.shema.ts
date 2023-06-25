@@ -10,12 +10,6 @@ export class Excercise {
   tile: string;
 
   @Prop()
-  type: {
-    solved_exercise: string
-    proposed_exercise: string
-  }
-
-  @Prop()
   description: string;
 
   @Prop()

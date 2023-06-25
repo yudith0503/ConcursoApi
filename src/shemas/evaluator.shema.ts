@@ -20,12 +20,6 @@ export class Evaluator {
   number_identity:number;
 
   @Prop()
-  sex:{
-    female:string
-    male: string
-  }
-
-  @Prop()
   age: number;
 
   @Prop()
@@ -34,22 +28,6 @@ export class Evaluator {
   @Prop()
   scool: string
 
-  @Prop()
-  teaching_level:{
-    primary: string
-    secondary: string
-    undergraduate: string
-    academic: string
-  }  
-  
-  @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Chat' })
-  chat: Chat;
-
-  @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Contents' })
-  content: Contents;
-
-  @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Help' })
-  help: Help;
 }
 
 export const EvaluatorSchema = SchemaFactory.createForClass(Evaluator);

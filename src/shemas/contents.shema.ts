@@ -10,9 +10,7 @@ export class Contents {
   @Prop({required:true,unique:true})
   title: string;  
   @Prop()
-  description: string;
-
-  
+  description: string;  
 }
 
 export const ContentsSchema = SchemaFactory.createForClass(Contents);
